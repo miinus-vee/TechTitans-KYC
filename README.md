@@ -1,8 +1,5 @@
 <h1>KYC Website</h1>
-![Alt text](https://github.com/Diald/TechTitans-KYC/raw/34eb71a38932090adc5db228ce5a4c802de320d1/Screenshot(1889)
 The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">DEMO LINK</a>
-
-
 <p>This repository contains the source code for a Know Your Customer (KYC) website. The KYC website is a platform designed to facilitate businesses in performing identity verification on their customers. It offers various features including capturing live photographs, verifying basic details such as name, date of birth, address, PAN card, and Aadhaar card, providing conversational form guidance, and supporting multiple languages.</p>
 
 <h2>Features</h2>
