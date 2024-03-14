@@ -1,5 +1,5 @@
 <h1>KYC Website</h1>
-<iframe width="560" height="315" src="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi" frameborder="0" allowfullscreen></iframe>
+The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">DEMO LINK</a>
 
 
 <p>This repository contains the source code for a Know Your Customer (KYC) website. The KYC website is a platform designed to facilitate businesses in performing identity verification on their customers. It offers various features including capturing live photographs, verifying basic details such as name, date of birth, address, PAN card, and Aadhaar card, providing conversational form guidance, and supporting multiple languages.</p>
