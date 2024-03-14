@@ -3,6 +3,14 @@ The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi
 <p>This repository contains the source code for a Know Your Customer (KYC) website. The KYC website is a platform designed to facilitate businesses in performing identity verification on their customers. It offers various features including capturing live photographs, verifying basic details such as name, date of birth, address, PAN card, and Aadhaar card, providing conversational form guidance, and supporting multiple languages.</p>
 
 <h2>Features</h2>
+<h3>Tech Stack Used</h3>
+<ul>
+    <li>Node.JS</li>
+    <li>Express.JS</li>
+    <li>EJS</li>
+    <li>MongoDB</li>
+    <li>REST API's</li>
+</ul>
 <ul>
     <li><strong>Live Photograph Capture:</strong> Utilizes JavaScript audio and video tags to capture a user's live photograph, which is then stored on the cloud platform powered by Cloudinary.</li>
         <li><strong>Basic Details Verification:</strong> Stores and verifies basic details like name, date of birth, address, PAN card, and Aadhaar card which are verified using using APIs and various npm packages.</li>
