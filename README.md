@@ -1,5 +1,5 @@
 <h1>KYC Website</h1>
-![Alt text](https://github.com/Diald/TechTitans-KYC/blob/main/Screenshot(1889).png)
+![Photo](https://github.com/Diald/TechTitans-KYC/blob/main/Screenshot(1889).png)Screenshot(1889).png
 The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">DEMO LINK</a>
 
 
