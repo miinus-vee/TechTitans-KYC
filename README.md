@@ -1,18 +1,19 @@
 <h1>KYC Website</h1>
-The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">VIDEO DEMO LINK</a>
-<p>This repository contains the source code for a Know Your Customer (KYC) website. The KYC website is a platform designed to facilitate businesses in performing identity verification on their customers. It offers various features including capturing live photographs, verifying basic details such as name, date of birth, address, PAN card, and Aadhaar card, providing conversational form guidance, and supporting multiple languages.</p>
+    <p>The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">VIDEO DEMO LINK</a></p>
+    <p>This repository contains the source code for a Know Your Customer (KYC) website. The KYC website is a platform designed to facilitate businesses in performing identity verification on their customers. It offers various features including capturing live photographs, verifying basic details such as name, date of birth, address, PAN card, and Aadhaar card, providing conversational form guidance, and supporting multiple languages.</p>
 
 <h3>Tech Stack Used</h3>
 <ul>
-    <li>Node.JS</li>
-    <li>Express.JS</li>
-    <li>EJS</li>
-    <li>MongoDB</li>
-    <li>REST API's</li>
-</ul>
+        <li>Node.JS</li>
+        <li>Express.JS</li>
+        <li>EJS</li>
+        <li>MongoDB</li>
+        <li>REST API's</li>
+    </ul>
+
 <h2>Features</h2>
-<ul>
-    <li><strong>Live Photograph Capture:</strong> Utilizes JavaScript audio and video tags to capture a user's live photograph, which is then stored on the cloud platform powered by Cloudinary.</li>
+    <ul>
+        <li><strong>Live Photograph Capture:</strong> Utilizes JavaScript audio and video tags to capture a user's live photograph, which is then stored on the cloud platform powered by Cloudinary.</li>
         <li><strong>Basic Details Verification:</strong> Stores and verifies basic details like name, date of birth, address, PAN card, and Aadhaar card which are verified using using APIs and various npm packages.</li>
         <li><strong>Conversational Form:</strong> Provides a conversational audio interface that guides users on how to fill the form effectively.</li>
         <li><strong>Multilingual Support:</strong> Supports over 100 languages using internationalization powered by Google APIs. Future plans include adding internationalization using AJAX.</li>
@@ -54,12 +55,22 @@ The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi
 <h2>Contributors</h2>
     <ul>
         <li>Tech Titans</li>
-        <li>Contributors <ul>
-            <li>Divya Gambhir</li>
-            <li>Siddharth Sharma</li>
+        <li>Contributors 
+            <ul>
+                <li>Divya Gambhir</li>
+                <li>Siddharth Sharma</li>
             <li>Aryan Chaudhary</li>
             <li>Manasvi Das</li>
             <li>Arnav Thankur</li>
             <li>Divya Sai Aamuktha Pelluri</li>
-        </ul></li>
+            </ul>
+        </li>
     </ul>
+
+    <!-- Let's add some fun images -->
+<img src="https://media.giphy.com/media/l0IyfiCQyTd73qVBq/giphy.gif" alt="Fun GIF">
+    <br>
+    <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" alt="Fun GIF">
+    <br>
+    <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Fun GIF">
+            
