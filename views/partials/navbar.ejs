@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<nav class="navbar sticky-top navbar-expand-lg" style="background-color: #000000;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" style="color: aliceblue; font-size: 30px; margin-right: 60px;">KYC </a>
+        <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <% if (!currentUser) { %>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link" href="/register" style="color: aliceblue;font-size: 20px;">Register</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <p class="nav-link" style="color: aliceblue;font-size: 30px;">/</p>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link" href="/login" style="color: aliceblue;font-size: 20px;">Login</a>
+                </li>
+                <% } else { %>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link" href="/logout" style="color: aliceblue;">Logout</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>

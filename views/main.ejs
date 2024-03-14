@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KYC Website</title>
+        <style>
+            body, html{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.main{
+    color: rgb(241, 241, 241);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110vh;
+    /* for 2nd Section */
+    /* grid-template-rows: 955px 200px;  */
+}
+
+.section1{
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://cf.ltkcdn.net/family/images/orig/200821-2121x1414-family.jpg);
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+    width: 5.5em;
+    margin-left: 3%;
+    margin-top: 1em;
+    font-size: 2em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .2em;
+    color: rgb(255, 255, 255);
+    border: solid cyan 4px;
+    border-bottom: -20em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes popup{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.header .nav-btn{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.header .nav-btn ul {
+    display: flex;
+}
+
+.header .nav-btn ul li a{
+    margin-right: 2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.hero-main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+}
+
+.hero-main .hero-contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+  margin-left: 80px;
+  margin-top: 30px;
+  animation-name: popup;
+    animation-duration: 2s;
+   }
+
+   .hero-img-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px ;
+    width: 120px;
+   }
+
+   .brandName{
+    margin-top: -150px;
+   font-size: 100px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, cursive;
+   font-weight: 900;
+   }
+
+   .hero-text{
+    margin-top: -60px;
+    margin-bottom: 20px;
+   }
+
+
+   .header .nav-btn ul li:nth-child(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px ;
+    width: 100px;
+    padding: 5px;
+    margin-top: -12px;
+    margin-left: 20px;
+    
+}
+
+.header .nav-btn ul li:nth-child(4) .acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -30px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container (left side) */
+}
+
+.btn {
+    margin-right: 10px; /* Optional: Add margin between buttons */
+}
+.section2{
+    background-color: rgb(241, 241, 241);
+}
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="/public/css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <%- include("./partials/navbar.ejs") %>
+
+        <main>
+            <%- include('./partials/flash.ejs') %>
+        </main>
+
+        <div class="main">
+            <div class="section1">
+                <div class="hero-main">
+                    <div class="hero-contents">
+    
+                    <div class="hero-img">
+                        <p class="brandName">Welcome</p>
+                    </div>
+                    <div class="hero-text">
+                        <h3>From here, possibilities are everywhere</h3>
+                        <h5>We’re here to connect your potential to new possibilities in the world’s most dynamic markets.</h5>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="btn"><a href="/login" style="background-color: rgb(15, 108, 208); color:wheat;border-radius: 10px;" class="hero-img-btn">Login</a></button>
+                        <button class="btn"><a href="/register" style="background-color: rgb(15, 108, 208);color: wheat;border-radius: 10px;" class="hero-img-btn">Register</a></button>
+                    </div>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="grey-bg container-fluid">
+                    <section id="minimal-statistics">
+                      <div class="row">
+                        <div class="col-12 mt-3 mb-1">
+                          <h4 class="text-uppercase" style="color: rgb(171, 6, 6); margin-top: 40px;margin-bottom: 40px;">Statistics of Our Company Over the Last Year.</h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12"> 
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="align-self-center">
+                                    <i class="icon-pencil primary font-large-2 float-left"></i>
+                                  </div>
+                                  <div class="media-body text-right">
+                                    <h3>278</h3>
+                                    <span>New Posts</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="align-self-center">
+                                    <i class="icon-speech warning font-large-2 float-left"></i>
+                                  </div>
+                                  <div class="media-body text-right">
+                                    <h3>156</h3>
+                                    <span>New Comments</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="align-self-center">
+                                    <i class="icon-graph success font-large-2 float-left"></i>
+                                  </div>
+                                  <div class="media-body text-right">
+                                    <h3>64.89 %</h3>
+                                    <span>Bounce Rate</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="align-self-center">
+                                    <i class="icon-pointer danger font-large-2 float-left"></i>
+                                  </div>
+                                  <div class="media-body text-right">
+                                    <h3>423</h3>
+                                    <span>Total Visits</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="danger">278</h3>
+                                    <span>New Projects</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-rocket danger font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="success">156</h3>
+                                    <span>New Clients</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-user success font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="warning">64.89 %</h3>
+                                    <span>Conversion Rate</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-pie-chart warning font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="primary">423</h3>
+                                    <span>Support Tickets</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-support primary font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="primary">278</h3>
+                                    <span>New Posts</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-book-open primary font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                                <div class="progress mt-1 mb-0" style="height: 7px;">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="warning">156</h3>
+                                    <span>New Comments</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-bubbles warning font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                                <div class="progress mt-1 mb-0" style="height: 7px;">
+                                  <div class="progress-bar bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="success">64.89 %</h3>
+                                    <span>Bounce Rate</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-cup success font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                                <div class="progress mt-1 mb-0" style="height: 7px;">
+                                  <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12">
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">
+                                <div class="media d-flex">
+                                  <div class="media-body text-left">
+                                    <h3 class="danger">423</h3>
+                                    <span>Total Visits</span>
+                                  </div>
+                                  <div class="align-self-center">
+                                    <i class="icon-direction danger font-large-2 float-right"></i>
+                                  </div>
+                                </div>
+                                <div class="progress mt-1 mb-0" style="height: 7px;">
+                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    
+                    <section id="stats-subtitle">
+                    <div class="row">
+                      <div class="col-12 mt-3 mb-1">
+                        <h4 class="text-uppercase" style="color: rgb(171, 6, 6); margin-top: 40px;margin-bottom: 40px;">Statistics of Our Yearly growth</h4>
+                      </div>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-xl-6 col-md-12">
+                        <div class="card overflow-hidden">
+                          <div class="card-content">
+                            <div class="card-body cleartfix">
+                              <div class="media align-items-stretch">
+                                <div class="align-self-center">
+                                  <i class="icon-pencil primary font-large-2 mr-2"></i>
+                                </div>
+                                <div class="media-body">
+                                  <h4>Total Posts</h4>
+                                  <span>Monthly blog posts</span>
+                                </div>
+                                <div class="align-self-center">
+                                  <h1>18,000</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-xl-6 col-md-12">
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="card-body cleartfix">
+                              <div class="media align-items-stretch">
+                                <div class="align-self-center">
+                                  <i class="icon-speech warning font-large-2 mr-2"></i>
+                                </div>
+                                <div class="media-body">
+                                  <h4>Total Comments</h4>
+                                  <span>Monthly blog comments</span>
+                                </div>
+                                <div class="align-self-center"> 
+                                  <h1>84,695</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-xl-6 col-md-12">
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="card-body cleartfix">
+                              <div class="media align-items-stretch">
+                                <div class="align-self-center">
+                                  <h1 class="mr-2">$76,456.00</h1>
+                                </div>
+                                <div class="media-body">
+                                  <h4>Total Sales</h4>
+                                  <span>Monthly Sales Amount</span>
+                                </div>
+                                <div class="align-self-center">
+                                  <i class="icon-heart danger font-large-2"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-xl-6 col-md-12">
+                        <div class="card">
+                          <div class="card-content">
+                            <div class="card-body cleartfix">
+                              <div class="media align-items-stretch">
+                                <div class="align-self-center">
+                                  <h1 class="mr-2">$36,000.00</h1>
+                                </div>
+                                <div class="media-body">
+                                  <h4>Total Cost</h4>
+                                  <span>Monthly Cost</span>
+                                </div>
+                                <div class="align-self-center">
+                                  <i class="icon-wallet success font-large-2"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  </div>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs') %>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="/js/formValidation.js"></script>
+        
+    </body>
+
+</html>

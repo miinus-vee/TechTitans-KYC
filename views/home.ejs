@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KYC Website</title>
+        <style>
+            body, html{
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+    }
+    body{
+        display: grid;
+        grid-template-rows: 130px 1fr;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://cf.ltkcdn.net/family/images/orig/200821-2121x1414-family.jpg);
+        background-size: cover;
+    }
+    .container{
+        margin-bottom: 50px;
+    }
+        </style>
+        <link rel="stylesheet" href="css/kyc.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+
+    <body class="d-flex flex-column vh-100">
+        <%- include('./partials/navbar.ejs') %>
+
+        <main class="container-">
+            <%- include('./partials/flash.ejs') %>
+        </main>
+        <div class="container d-flex justify-content-center align-items-center">
+
+        </div>
+        
+        <% if (currentUser) { %>
+        <section>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card mb-4">
+                        <img src="img/KYC-Logo (1).png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Full Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-secondary mb-0"><%=currentUser.fullname%></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Gender</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <% if (currentUser.gender.toString() == "male") { %>
+                                    <p class="text-secondary mb-0">Male</p>
+                                    <% } else if (currentUser.gender.toString() == 'female'){ %>
+                                    <p class="text-secondary mb-0">Female</p>
+                                    <% } else { %>
+                                    <p class="text-secondary mb-0">Transgender</p>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Contact Number</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-secondary mb-0"><%=currentUser.username%></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Date of Birth</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-secondary mb-0"><%=currentUser.dob.toString().substring(0,15)%></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-secondary mb-0"><%=currentUser.address%></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">KYC Status</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <% if (currentUser) { %>
+                                        <a class="nav-link kyc-pending <% if (currentUser.kycStatus) { %>
+                                         <%= 'kyc-done disabled-link' %>
+                                        <% } %>" href="/kyc">KYC</a>
+                                        <% } %>
+                                    <% if (currentUser.kycStatus) { %>
+                                        <p class="text-success mb-0">Verified</p>
+                                    <% } else { %>
+                                        <p class="text-success mb-0">Verified</p>
+                                    <% } %>
+                                </div>
+                            </div>
+                            
+                            <% }%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <%- include('./partials/footer.ejs') %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="/js/formValidation.js"></script>
+        
+    </body>
+
+</html>
