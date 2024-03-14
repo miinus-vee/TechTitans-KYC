@@ -1,5 +1,5 @@
 <h1>KYC Website</h1>
-![Photo](https://github.com/Diald/TechTitans-KYC/blob/34eb71a38932090adc5db228ce5a4c802de320d1/Screenshot(1889).png)
+![Photo]https://github.com/Diald/TechTitans-KYC/blob/34eb71a38932090adc5db228ce5a4c802de320d1/Screenshot(1889).png
 The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">DEMO LINK</a>
 
 
