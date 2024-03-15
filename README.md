@@ -1,6 +1,7 @@
 <h1>KYC Website</h1>
 
 ![Image Description](https://raw.githubusercontent.com/Diald/TechTitans-KYC/main/assets/114723756/1e01e3f3-4e43-4dc8-8a9b-1643ad7a1ec9)
+
 <p>Video Name in Repository - KYCVideo.mp4 </p>
 <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Fun GIF">
     <p>The Demo is given as - <a href="https://youtu.be/PcWqM0fycSc?si=j_z9n-lHzWOCnHoi">VIDEO DEMO LINK</a></p>
