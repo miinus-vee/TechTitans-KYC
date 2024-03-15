@@ -1,5 +1,4 @@
 <h1>KYC Website</h1>
-![Image Description](https://raw.githubusercontent.com/Diald/TechTitans-KYC/main/assets/114723756/1e01e3f3-4e43-4dc8-8a9b-1643ad7a1ec9)
 
 https://github.com/Diald/TechTitans-KYC/assets/114723756/a6d04b25-fb66-40ea-9d79-2852916fba70
 
